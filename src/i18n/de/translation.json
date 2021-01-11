@@ -1,0 +1,18 @@
+{
+  "general": {
+    "name": "Widerstandsrechner"
+  },
+  "pages": {
+    "resistancecolorcodecalculator": {
+      "heading": "Widerstands farbcoderechner"
+    },
+    "settings": {
+      "heading": "Einstellungen",
+      "darkMode": "Dunkles Erscheinungsbild",
+      "language": "Sprache"
+    },
+    "github": {
+      "heading": "GitHub"
+    }
+  }
+}

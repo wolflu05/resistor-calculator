@@ -1,0 +1,8 @@
+const types = {
+  SETTINGS_DARKMODE: "SETTINGS_DARKMODE",
+  SETTINGS_LANGUAGE: "SETTINGS_LANGUAGE",
+  MENU_OPEN: "MENU_OPEN",
+  MENU_PAGE: "MENU_PAGE",
+};
+
+export default types;

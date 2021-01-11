@@ -1,0 +1,17 @@
+{
+  "general": {
+    "name": "Resistor Calculator"
+  },
+  "pages": {
+    "resistancecolorcodecalculator": {
+      "heading": "Resistor Color Code Calculator"
+    },
+    "settings": {
+      "heading": "Settings",
+      "darkMode": "Darkmode"
+    },
+    "github": {
+      "heading": "GitHub"
+    }
+  }
+}
