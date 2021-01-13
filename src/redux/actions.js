@@ -26,3 +26,11 @@ export function menuPage({ page }) {
     page,
   };
 }
+
+export function rcccUpdate({ key, value }) {
+  return {
+    type: types.RCCC_UPDATE,
+    key,
+    value,
+  };
+}

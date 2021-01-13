@@ -8,10 +8,33 @@
     },
     "settings": {
       "heading": "Settings",
-      "darkMode": "Darkmode"
+      "darkMode": "Darkmode",
+      "language": "Language"
     },
     "github": {
       "heading": "GitHub"
     }
+  },
+  "colors": {
+    "black": "black",
+    "brown": "brown",
+    "red": "red",
+    "orange": "orange",
+    "yellow": "yellow",
+    "green": "green",
+    "blue": "blue",
+    "purple": "purple",
+    "gray": "gray",
+    "white": "white",
+    "gold": "gold",
+    "silver": "silver"
+  },
+  "resistor": {
+    "ring": "ring",
+    "resistance": "Resistance value",
+    "tolerance": "Tolerance"
+  },
+  "errors": {
+    "resistorNotDisplayable": "This resistor cannot be displayed, please select other values."
   }
 }

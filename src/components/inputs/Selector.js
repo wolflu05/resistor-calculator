@@ -4,16 +4,18 @@ import { Select, MenuItem } from "@material-ui/core";
 
 import BootstrapInput from "./BootstrapInput";
 
-function LanguageSelector({ value, onChange, items }) {
+function Selector({ value, onChange, items }) {
   return (
     <div>
       <Select value={value} onChange={onChange} input={<BootstrapInput />}>
         {items.map(({ value, title }) => (
-          <MenuItem value={value}>{title}</MenuItem>
+          <MenuItem key={value} value={value}>
+            {title}
+          </MenuItem>
         ))}
       </Select>
     </div>
   );
 }
 
-export default LanguageSelector;
+export default Selector;

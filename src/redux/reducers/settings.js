@@ -1,8 +1,16 @@
 import types from "../actionTypes.js";
 
+const preferredTheme = window.matchMedia(" (prefers-color-scheme: dark)")
+  ?.matches;
+const preferredLanguage = navigator.language || navigator.userLanguage;
+
 const initialState = {
-  darkMode: localStorage.getItem("settings.darkMode") === "true" || false,
-  language: localStorage.getItem("settings.language") || "en-EN",
+  darkMode:
+    localStorage.getItem("settings.darkMode") === "true" ||
+    preferredTheme ||
+    false,
+  language:
+    localStorage.getItem("settings.language") || preferredLanguage || "en-EN",
 };
 
 function settingsReducer(state = initialState, action) {

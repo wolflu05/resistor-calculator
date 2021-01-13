@@ -9,13 +9,9 @@ import {
 import { light, dark } from "../../util/theme";
 
 function ThemeProvider({ children }) {
-  const lightTheme = createMuiTheme(light);
-
-  const darkTheme = createMuiTheme(dark);
-
   const theme = useSelector((state) => state.settings.darkMode)
-    ? darkTheme
-    : lightTheme;
+    ? createMuiTheme(dark)
+    : createMuiTheme(light);
 
   return <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>;
 }

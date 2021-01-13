@@ -4,7 +4,7 @@
   },
   "pages": {
     "resistancecolorcodecalculator": {
-      "heading": "Widerstands farbcoderechner"
+      "heading": "Widerstandsfarbcoderechner"
     },
     "settings": {
       "heading": "Einstellungen",
@@ -14,5 +14,27 @@
     "github": {
       "heading": "GitHub"
     }
+  },
+  "colors": {
+    "black": "schwarz",
+    "brown": "braun",
+    "red": "rot",
+    "orange": "orange",
+    "yellow": "gelb",
+    "green": "grün",
+    "blue": "blau",
+    "purple": "violett",
+    "gray": "grau",
+    "white": "weiß",
+    "gold": "gold",
+    "silver": "silber"
+  },
+  "resistor": {
+    "ring": "Ring",
+    "resistance": "Widerstand",
+    "tolerance": "Toleranz"
+  },
+  "errors": {
+    "resistorNotDisplayable": "Dieser Widerstand kann nicht dargestellt werden, bitte wählen Sie andere Werte aus."
   }
 }

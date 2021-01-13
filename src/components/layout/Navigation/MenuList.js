@@ -4,10 +4,10 @@ import { List, Divider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import MailIcon from "@material-ui/icons/Mail";
 import SettingsIcon from "@material-ui/icons/Settings";
-import GitHubIcon from "@material-ui/icons/GitHub";
+// import GitHubIcon from "@material-ui/icons/GitHub";
 
 import MenuItem from "./MenuItem";
-import { pages, githubLink } from "../../../util/constants";
+import { pages /* , githubLink */ } from "../../../util/constants";
 
 const useStyles = makeStyles({
   container: {
@@ -33,14 +33,14 @@ function MenuItems() {
       <List>
         <Divider />
         <MenuItem icon={SettingsIcon} id={pages.SETTINGS} />
-        <a
+        {/* <a
           href={githubLink}
           target="_blank"
           rel="noreferrer"
           className={classes.link}
         >
           <GitHubIcon />
-        </a>
+        </a> */}
       </List>
     </div>
   );

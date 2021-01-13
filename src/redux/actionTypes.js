@@ -3,6 +3,7 @@ const types = {
   SETTINGS_LANGUAGE: "SETTINGS_LANGUAGE",
   MENU_OPEN: "MENU_OPEN",
   MENU_PAGE: "MENU_PAGE",
+  RCCC_UPDATE: "RCCC_UPDATE",
 };
 
 export default types;
