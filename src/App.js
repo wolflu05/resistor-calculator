@@ -7,6 +7,7 @@ import ThemeProvider from "./components/layout/ThemeProvider";
 import Layout from "./components/layout/Layout";
 import ResistanceColorCodeCalculator from "./pages/ResistanceColorCodeCalculator";
 import SettingsPage from "./pages/Settings";
+import SwAlert from "./components/SwAlert";
 import { pages } from "./util/constants";
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <ResistanceColorCodeCalculator />
         )}
         {page === pages.SETTINGS && <SettingsPage />}
+
+        <SwAlert />
       </Layout>
     </ThemeProvider>
   );

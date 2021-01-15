@@ -4,6 +4,8 @@ const types = {
   MENU_OPEN: "MENU_OPEN",
   MENU_PAGE: "MENU_PAGE",
   RCCC_UPDATE: "RCCC_UPDATE",
+  SW_INIT: "SW_INIT",
+  SW_UPDATE: "SW_UPDATE",
 };
 
 export default types;

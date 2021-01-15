@@ -34,3 +34,17 @@ export function rcccUpdate({ key, value }) {
     value,
   };
 }
+
+export function swInit({ state }) {
+  return {
+    type: types.SW_INIT,
+    state,
+  };
+}
+
+export function swUpdate({ registration }) {
+  return {
+    type: types.SW_UPDATE,
+    registration,
+  };
+}

@@ -36,5 +36,12 @@
   },
   "errors": {
     "resistorNotDisplayable": "This resistor cannot be displayed, please select other values."
+  },
+  "alerts": {
+    "sw": {
+      "swInit": "The app has been successfully saved for offline use.",
+      "swUpdate": "A new version of the app is available. Update now to get the latest features.",
+      "swUpdateButton": "Update"
+    }
   }
 }

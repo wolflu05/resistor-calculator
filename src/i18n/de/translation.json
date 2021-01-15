@@ -36,5 +36,12 @@
   },
   "errors": {
     "resistorNotDisplayable": "Dieser Widerstand kann nicht dargestellt werden, bitte wählen Sie andere Werte aus."
+  },
+  "alerts": {
+    "sw": {
+      "swInit": "Die App wurde erfolgreich für die Offline-Nutzung gespeichert.",
+      "swUpdate": "Eine neue Version der App ist verfügbar. Aktualisiere jetzt, um die neuesten Funktionen zu bekommen.",
+      "swUpdateButton": "Aktualisieren"
+    }
   }
 }
