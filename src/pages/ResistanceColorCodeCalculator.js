@@ -56,7 +56,11 @@ function ResistanceColorCodeCalculator() {
         <Alert severity="error">{t("errors.resistorNotDisplayable")}</Alert>
       )}
 
-      <Result resistance={resistance} tolerance={tolerance} />
+      <Result
+        resistance={resistance}
+        setResistance={setResistance}
+        tolerance={tolerance}
+      />
     </div>
   );
 }

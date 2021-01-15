@@ -1,5 +1,6 @@
 import {
   toHumanReadable,
+  humanReadableToNumber,
   invertObject,
   fillString,
   roundToPowerOf10,
@@ -62,6 +63,10 @@ export function colorRingsToResistance(rings) {
 
 export function resistanceToHumanReadable(resistance, digits = 3) {
   return toHumanReadable(resistance, digits, resistanceUnits);
+}
+
+export function humanReadableToResistance(string) {
+  return humanReadableToNumber(string, resistanceUnits);
 }
 
 export const colorRingColors = {

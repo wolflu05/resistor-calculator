@@ -12,6 +12,16 @@ export function toHumanReadable(weight, dp, units) {
   return `${dp === -1 ? n : round(n, dp)}${units[u]}`;
 }
 
+export function humanReadableToNumber(string, units) {
+  const match = string.match(new RegExp(`([0-9|.]+)(${units.join("|")})`));
+  if (match?.length !== 3) return null;
+
+  return (
+    parseFloat(match[1]) *
+    parseInt(`1${"0".repeat((units.indexOf(match[2]) + 0) * 3)}`)
+  );
+}
+
 export function invertObject(object) {
   return Object.entries(object).reduce((newObject, [key, value]) => {
     newObject[value] = key;
