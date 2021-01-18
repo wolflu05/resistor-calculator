@@ -42,3 +42,12 @@ export function roundToPowerOf10(n) {
   const ceiled = 10 ** exponent;
   return n / ceiled > 0.5 ? ceiled : 10 ** (exponent - 1);
 }
+
+export function getLangCode(str) {
+  if (str.length < 5) {
+    return `${str.toLowerCase()}-${str.toUpperCase()}`;
+  } else {
+    const [first, second] = str.split("-");
+    return `${first.toLowerCase()}-${second.toUpperCase()}`;
+  }
+}

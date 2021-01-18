@@ -1,4 +1,5 @@
 import types from "../actionTypes.js";
+import { getLangCode } from "../../util/util";
 
 const preferredTheme = window.matchMedia(" (prefers-color-scheme: dark)")
   ?.matches;
@@ -9,8 +10,9 @@ const initialState = {
     localStorage.getItem("settings.darkMode") === "true" ||
     preferredTheme ||
     false,
-  language:
-    localStorage.getItem("settings.language") || preferredLanguage || "en-EN",
+  language: getLangCode(
+    localStorage.getItem("settings.language") || preferredLanguage || "en-EN"
+  ),
 };
 
 function settingsReducer(state = initialState, action) {

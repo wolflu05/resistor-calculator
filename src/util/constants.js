@@ -23,3 +23,8 @@ export const resistorColors = {
   gold: ["#f0e68c", "#daa520"],
   silver: ["#c0c0c0", "#838996"],
 };
+
+export const languages = [
+  { value: "en-EN", title: "English" },
+  { value: "de-DE", title: "Deutsch" },
+];
