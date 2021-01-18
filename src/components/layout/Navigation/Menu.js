@@ -18,7 +18,7 @@ import MenuList from "./MenuList";
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("md")]: {
       width: drawerWidth,
       flexShrink: 0,
     },
@@ -48,7 +48,7 @@ function Menu() {
 
   return (
     <nav className={classes.drawer}>
-      <Hidden smUp implementation="css">
+      <Hidden mdUp implementation="css">
         <SwipeableDrawer
           variant="temporary"
           anchor="left"
@@ -74,7 +74,7 @@ function Menu() {
           </div>
         </SwipeableDrawer>
       </Hidden>
-      <Hidden xsDown implementation="css">
+      <Hidden smDown implementation="css">
         <Drawer
           variant="permanent"
           className={classes.drawer}

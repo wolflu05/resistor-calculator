@@ -31,6 +31,7 @@
   },
   "resistor": {
     "ring": "ring",
+    "ring_plural": "rings",
     "resistance": "Resistance value",
     "tolerance": "Tolerance"
   },

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Resistor({ colors }) {
+function Resistor5Rings({ colors }) {
   return (
     <div>
       <svg
@@ -133,4 +133,4 @@ function Resistor({ colors }) {
   );
 }
 
-export default Resistor;
+export default Resistor5Rings;

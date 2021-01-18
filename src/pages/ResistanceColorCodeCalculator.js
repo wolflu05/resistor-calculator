@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { rcccUpdate } from "../redux/actions";
 import { resistanceToRingColorsHex } from "../util/resistance";
+import Resistor4Rings from "../components/Resistor4Rings";
 import Resistor5Rings from "../components/Resistor5Rings";
 import ColorChooser from "../components/ColorChooser";
 import Result from "../components/Result";
@@ -33,14 +34,17 @@ function ResistanceColorCodeCalculator() {
     dispatch(rcccUpdate({ key: "resistance", value: resistance }));
   const setTolerance = (tolerance) =>
     dispatch(rcccUpdate({ key: "tolerance", value: tolerance }));
+  const setRings = (rings) =>
+    dispatch(rcccUpdate({ key: "rings", value: rings }));
 
-  let colors = resistanceToRingColorsHex(resistance, tolerance, 5);
+  let colors = resistanceToRingColorsHex(resistance, tolerance, rings);
   const valid = colors.findIndex((ring) => ring === undefined) === -1;
   if (!valid) colors = Array.from({ length: rings }, () => [0, 0]);
 
   return (
     <div>
       <div className={classes.resistor}>
+        {rings === 4 && <Resistor4Rings colors={colors} />}
         {rings === 5 && <Resistor5Rings colors={colors} />}
       </div>
 
@@ -50,6 +54,7 @@ function ResistanceColorCodeCalculator() {
         tolerance={tolerance}
         setTolerance={setTolerance}
         rings={rings}
+        setRings={setRings}
       />
 
       {!valid && (

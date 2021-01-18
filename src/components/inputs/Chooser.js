@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Chooser({ value, onChange, ring, options }) {
+function Chooser({ value, onChange, ring, options, rings }) {
   const { t } = useTranslation();
   const classes = useStyles();
 
@@ -28,15 +28,26 @@ function Chooser({ value, onChange, ring, options }) {
             let textColor = "#fff";
             if (backgroundColor === resistorColors.white[0]) textColor = "#000";
 
+            let str = t(`colors.${color}`);
+
+            if (rings - 1 === ring) {
+              // multipler
+              str = `${str} (x${value})`;
+            } else if (rings === ring) {
+              // tolerance
+              str = `${str} (${value}%)`;
+            } else {
+              // color rings
+              str = `${str} (${value})`;
+            }
+
             return (
               <option
                 value={color}
                 key={i}
                 style={{ backgroundColor, color: textColor }}
               >
-                {t(`colors.${color}`)} ({ring === 4 && "x"}
-                {value}
-                {ring === 5 && "%"})
+                {str}
               </option>
             );
           })}
