@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/resistor-calculator/static/css/main.a7c5cd76.chunk.css",
+    "main.js": "/resistor-calculator/static/js/main.ad679c3d.chunk.js",
+    "main.js.map": "/resistor-calculator/static/js/main.ad679c3d.chunk.js.map",
+    "runtime-main.js": "/resistor-calculator/static/js/runtime-main.a31023c6.js",
+    "runtime-main.js.map": "/resistor-calculator/static/js/runtime-main.a31023c6.js.map",
+    "static/js/2.0efdcb23.chunk.js": "/resistor-calculator/static/js/2.0efdcb23.chunk.js",
+    "static/js/2.0efdcb23.chunk.js.map": "/resistor-calculator/static/js/2.0efdcb23.chunk.js.map",
+    "static/js/3.db84534c.chunk.js": "/resistor-calculator/static/js/3.db84534c.chunk.js",
+    "static/js/3.db84534c.chunk.js.map": "/resistor-calculator/static/js/3.db84534c.chunk.js.map",
+    "index.html": "/resistor-calculator/index.html",
+    "service-worker.js": "/resistor-calculator/service-worker.js",
+    "service-worker.js.map": "/resistor-calculator/service-worker.js.map",
+    "static/css/main.a7c5cd76.chunk.css.map": "/resistor-calculator/static/css/main.a7c5cd76.chunk.css.map",
+    "static/js/2.0efdcb23.chunk.js.LICENSE.txt": "/resistor-calculator/static/js/2.0efdcb23.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a31023c6.js",
+    "static/js/2.0efdcb23.chunk.js",
+    "static/css/main.a7c5cd76.chunk.css",
+    "static/js/main.ad679c3d.chunk.js"
+  ]
+}
